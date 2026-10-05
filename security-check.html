@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Security Check</title>
+<style>
+body{margin:0;background:#0f1115;color:#fff;font-family:Arial,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center}
+.box{width:min(420px,88%);text-align:center;background:#191c23;padding:32px 24px;border-radius:20px;box-shadow:0 10px 35px #0008}
+.icon{font-size:48px}.bar{height:8px;background:#30343d;border-radius:8px;overflow:hidden;margin:25px 0}
+.fill{height:100%;width:0;background:#fff;animation:load 4s linear forwards}
+#done{display:none}
+@keyframes load{to{width:100%}}
+</style>
+</head>
+<body>
+<div class="box">
+<div class="icon">🔐</div>
+<h2>Security Check</h2>
+<p>Checking account security…</p>
+<div class="bar"><div class="fill"></div></div>
+<div id="done"><h2>Security check complete</h2><p>😂 لا تقلقي، هذه مجرد صفحة مقلب! لا توجد أي معلومات تم جمعها.</p></div>
+</div>
+<script>
+setTimeout(()=>document.getElementById('done').style.display='block',4200);
+</script>
+</body>
+</html>
